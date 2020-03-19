@@ -22,7 +22,7 @@ static int	_contain_until(char c, const char *s, int max_i)
 	int	i;
 
 	i = 0;
-	while (s[i] && i < max_i)
+	while (i < max_i && s[i])
 	{
 		if (s[i] == c)
 			return (1);

@@ -52,7 +52,7 @@ static void	_putstr_len(const char *s, const int max_i)
 	int i;
 
 	i = 0;
-	while (s[i] && i < max_i)
+	while (i < max_i && s[i])
 	{
 		_putchar(s[i]);
 		i++;
